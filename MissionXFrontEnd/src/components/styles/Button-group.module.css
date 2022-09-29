@@ -1,0 +1,35 @@
+
+.inactive{
+    width: max-content;
+    height: 21px;
+    background: whitesmoke;
+    color: #767676;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+
+    }
+
+.active {
+    background-color: rgb(21, 124, 234);
+    border: 1.5px solid rgb(25, 26, 24);
+    width: max-content;
+    height: 21px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+
+@media screen and (max-width: 769px) {
+    .inactive {
+        height: 15px;
+        letter-spacing: 0.3px;
+        font-size: 2vw;
+    }
+}

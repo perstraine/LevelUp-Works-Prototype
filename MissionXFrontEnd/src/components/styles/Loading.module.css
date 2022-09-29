@@ -1,0 +1,21 @@
+/* Structure */
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40%;
+    color:#b2e4fa;
+    font-weight: bold;
+    font-size: 5vw; 
+}
+
+
+/* Skinning */
+
+.default{
+    color: #b2e4fa;
+    font-weight: bold;
+    font-size: 5vw;
+}

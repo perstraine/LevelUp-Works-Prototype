@@ -1,0 +1,22 @@
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.loadingCircle {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f7f7f7;
+  border-top-color: #707070;
+  border-radius: 50%;
+  animation: loadingAnimaiton 1s linear infinite;
+  opacity: 90%;
+}
+
+@keyframes loadingAnimaiton {
+  to {
+    transform: rotate(1turn);
+  }
+}

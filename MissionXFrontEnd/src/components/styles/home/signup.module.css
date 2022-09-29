@@ -1,0 +1,170 @@
+@import url("https://use.typekit.net/wjd7ohr.css");
+
+#modalOverlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter : blur(4px);
+    display: flex;
+    justify-content: center;
+    border: 1px solid #707070;
+    z-index: 20;
+}
+
+#modalContent{
+    margin-top: 1%;
+    background-color: white;
+    height:fit-content;
+    display: flex;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+#modalLeft,#modalRight{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid #707070;
+}
+
+.images{
+    width: 65%;
+}
+
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.modalTitle{
+    margin-top: 0.8em;
+    font-family: 'nunito';
+    font-weight: 800;
+    color: #707070;
+    font-size: calc(27px + (37 - 27) * ((100vw - 769px) / (2560 - 769)));
+}
+
+.inputFields{
+    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    color: #707070;
+    padding-left: 2em;
+    margin-top: 15%;
+    border: #A29F9F 1px solid;
+    border-radius: 8px;
+    font-family: 'open-sans';
+    font-weight: 700;
+    line-height: 2em;
+    font-size: calc(10px + (13 - 10) * ((100vw - 769px) / (2560 - 769)));
+}
+
+.field::placeholder{
+    color: #A5A5A5;
+}
+
+.signUpLoginBtns{
+    padding-top: 7%;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.LogINActive{
+    margin-right: 1%;
+    font-family: 'open-sans';
+    font-weight: 700;
+    font-size: calc(15px + (18 - 15) * ((100vw - 769px) / (2560 - 769)));
+    color: #707070;
+    padding: 0;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #43C0F6 3px solid;
+}
+
+.LogIN{
+    margin-right: 1%;
+    font-family: 'open-sans';
+    font-weight: 700;
+    font-size: calc(15px + (18 - 15) * ((100vw - 769px) / (2560 - 769)));
+    color: #A5A5A5;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.SignUPActive{
+    font-family: 'open-sans';
+    font-weight: 700;
+    font-size: calc(15px + (18 - 15) * ((100vw - 769px) / (2560 - 769)));
+    color: #707070;
+    padding: 0;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #F91C85 3px solid;
+}
+
+.SignUP{
+    font-family: 'open-sans';
+    font-weight: 700;
+    font-size: calc(15px + (18 - 15) * ((100vw - 769px) / (2560 - 769)));
+    color: #A5A5A5;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.submitButton{
+    margin-top: 3em;
+    margin-bottom: 1em;
+    padding-top: 0.3em;
+    font-family: 'nunito';
+    font-weight: 800;
+    font-size: calc(10px + (13 - 10) * ((100vw - 769px) / (2560 - 769)));
+    line-height: 1.8em;
+    width: 10em;
+    background-color: #F91C85;
+    color: #F0EFEF;
+    border-radius: 4px;
+    border: none;
+    box-shadow: #00000029 0 4px 5px;
+}
+
+#closeButton{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 1em 0 0;
+    font-family: 'nunito';
+    font-size: calc(20px + (25 - 20) * ((100vw - 769px) / (2560 - 769)));
+    font-weight: 800;
+    color: #707070;
+}
+
+#placeHolder{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 1em 0 0;
+    color: white;
+    font-family: 'nunito';
+    font-size: calc(20px + (25 - 20) * ((100vw - 769px) / (2560 - 769)));
+    font-weight: 800;
+}
+
+.errMsg{
+    color: 707070;
+    font-family: 'nunito';
+    font-size: calc(10px + (13 - 10) * ((100vw - 769px) / (2560 - 769)));
+    font-weight: 800;
+    margin-bottom: 1em;
+}

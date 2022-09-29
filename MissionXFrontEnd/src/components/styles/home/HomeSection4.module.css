@@ -1,0 +1,148 @@
+#sectionFour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: "nunito";
+  color: #6c6c6c;
+}
+
+#sectionFourTitle {
+  text-align: center;
+  font-size: calc(28px + (35 - 28) * ((100vw - 769px) / (2560 - 769)));
+  font-weight: 700;
+  color: #6c6c6c;
+  padding-bottom: 3vw;
+}
+
+#buttonHolder {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  padding-bottom: 1vw;
+}
+
+#buttons {
+  padding-top: 0.3%;
+  width: 20%;
+  font-size: calc(9px + (16 - 9) * ((100vw - 769px) / (2560 - 769)));
+  font-weight: 900;
+  background-color: white;
+  border: #43c0f6 solid 2px;
+  box-shadow: #00000029 0px 4px 5px;
+  border-radius: 5px;
+  color: #707070;
+}
+
+#buttonsActive{
+  padding-top: 0.3%;
+  width: 20%;
+  font-size: calc(9px + (16 - 9) * ((100vw - 769px) / (2560 - 769)));
+  font-weight: 800;
+  background-color: #EFEFF1;
+  border: #EFEFF1 solid 2px;
+  box-shadow: #00000029 0px 4px 5px;
+  border-radius: 5px;
+  color: #707070;
+}
+
+#sectionFourStagingArea {
+  width: 100%;
+  background-color: #efeff1;
+  border: #efeff1 solid 1px;
+  display: flex;
+  justify-content: center;
+}
+
+#stagingAreaHolder {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2vw;
+}
+
+#stagingAreaTitle {
+  width: 100%;
+  color: #606060;
+  font-size: calc(20px + (28 - 20) * ((100vw - 769px) / (2560 - 769)));
+  font-weight: 700;
+}
+
+#stagingAreaIntro{
+    padding-top: 2%;
+    width: 100%;
+    font-family: 'open-sans';
+    font-size: calc(12px + (20 - 12) * ((100vw - 769px) / (2560 - 769)));
+    font-weight: 700;
+}
+
+#stagingAreaPoints{
+    padding-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.star{
+    width: 4%;
+    object-fit: contain;
+    padding-right: 1%;
+}
+
+#starImage{
+  /* height: 100%; */
+  width: 100%;
+  object-fit: contain;
+}
+
+.point{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'open-sans';
+    font-weight: 700;
+    padding-bottom: 2%;
+}
+
+.pointTitle{
+    width: 100%;
+    font-size: calc(12px + (20 - 12) * ((100vw - 769px) / (2560 - 769)));
+
+}
+
+.pointInfo{
+    width: 92%;
+    font-size: calc(9px + (17 - 9) * ((100vw - 769px) / (2560 - 769)));
+    
+}
+
+/* @media screen and (max-width: 768px){
+  #sectionFour {
+    text-align: center;
+  }
+} */
+
+@media screen and (max-width: 426px) {
+  /* #sectionFour {
+    text-align: center;
+  } */
+  #stagingAreaPoints{
+    align-items: center;
+  }
+  #stagingAreaHolder {
+    width: 90%;
+  }
+  #buttonHolder{
+    width: 100%;
+  }
+  #buttons{
+    padding: 0;
+  }
+  .star{
+    width: 5%;
+  }
+  .point{
+    width: 94%;
+  }
+}

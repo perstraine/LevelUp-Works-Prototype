@@ -1,0 +1,73 @@
+@import url("https://use.typekit.net/wjd7ohr.css");
+
+#footer {
+  width: 100%;
+  background-color: #b2e4fa;
+}
+
+#footerContentHolder {
+  display: flex;
+  justify-content: space-between;
+  /* height: 500px; */
+  padding: 8% 10%;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  color: #707070;
+  letter-spacing: 0.4px;
+}
+
+.footerTitle {
+  font-family: nunito, sans-serif;
+  font-style: normal;
+  font-size: 1.3vw;
+  font-weight: 700;
+  padding: 5% 0px;
+}
+
+.footerContent {
+  font-family: "open-sans", sans-serif;
+  font-weight: 700;
+  /* font-size: 16px; */
+  font-size: 1vw;
+  padding-top: 8%;
+  line-height: 1.6;
+}
+
+/* Special because the LevelUp Works Section in the footer has a different style 
+than the other 4 parts*/
+#special{
+    padding-top: 0px;
+    margin-top: -8px;
+}
+@media screen and (max-width: 1000px) {
+  .footerTitle {
+    font-size: 2vw;
+  }
+  .footerContent {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #footerContentHolder {
+    flex-direction: column;
+  }
+  .footerSection {
+    max-width: 80%;
+  }
+  .footerTitle {
+    font-size: 5vw;
+  }
+  .footerContent {
+    font-size: 4vw;
+    padding: 3% 0px 4%;
+  }
+  #special{
+    margin-top: auto;
+    padding: 5% 0px;
+  }
+}

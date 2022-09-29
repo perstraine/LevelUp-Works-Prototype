@@ -1,0 +1,151 @@
+#sectionFive{
+    line-height: normal;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding: 4vw 0;
+}
+
+#sectionFiveLeft{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#teacherimg{
+    width: 80%;
+}
+
+#sectionFiveRight{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: #6C6C6C;
+}
+
+#sectionFiveRightWrapping{
+    padding-top: 2%;
+    padding-left: 2%;
+    width: 85%;
+}
+
+#sectionFiveTitle{
+    font-family: 'nunito';
+    font-weight: 700;
+    font-size: calc(32px + (40 - 32) * ((100vw - 769px) / (2560 - 769)));
+    padding: 3% 0;
+}
+
+#sectionFiveSubtitle{
+    font-family: 'open-sans';
+    font-weight: 700;
+    font-size: calc(20px + (32 - 20) * ((100vw - 769px) / (2560 - 769)));
+    padding-bottom: 5%;
+}
+
+#sectionFiveInfo{
+    width: 90%;
+font-family: 'open-sans';
+    font-weight: 700;
+    font-size: calc(12px + (18 - 12) * ((100vw - 769px) / (2560 - 769)));
+}
+
+#sectionFiveButtonHolder{
+    padding-top: 3vw;
+    display: flex;
+}
+
+.sectionFiveButtons{
+    width: 9vw;
+    height: auto;
+    font-size: calc(10px + (14 - 10) * ((100vw - 769px) / (2560 - 769)));
+    border-radius: 6px;
+    font-family: 'nunito';
+    font-weight: 900;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    box-shadow: #00000029 0px 4px 5px;
+}
+
+#enquire{
+    color: #707070;
+    border:#43C0F6 2px solid;
+    margin-right: 5vw;
+}
+
+#sectionFiveSignup{
+    background-color: #F91C85;
+    color: #F0EFEF;
+    border: none;
+}
+
+@media screen and (max-width : 768px) and (min-width:426px){
+    #sectionFive{
+        flex-direction: column;
+        align-items: center;
+    }
+    #sectionFiveLeft, #sectionFiveRight{
+        width: 100%;
+    }
+    #sectionFiveRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #sectionFiveTitle{
+        font-size: calc(24px + (32 - 24) * ((100vw - 425px) / (768 - 425)));
+    }
+
+    #sectionFiveSubtitle{
+        font-size: calc(15px + (20 - 15) * ((100vw - 425px) / (768 - 425)));
+    }
+    #sectionFiveInfo{
+        font-size: calc(10px + (12 - 10) * ((100vw - 425px) / (768 - 425)));
+    }
+    #sectionFiveButtonHolder{
+        width: 100%;
+    }
+    .sectionFiveButtons{
+        height: auto;
+        padding-top: 1%;
+        width: 50%;
+        font-size: calc(8px + (10 - 8) * ((100vw - 425px) / (768 - 425)));
+    }
+}
+
+@media screen and (max-width: 426px){
+    #sectionFive{
+        flex-direction: column;
+        align-items: center;
+    }
+    #sectionFiveLeft, #sectionFiveRight{
+        width: 100%;
+    }
+    #sectionFiveRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #sectionFiveTitle{
+        font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (425 - 320)));
+    }
+
+    #sectionFiveSubtitle{
+        font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (425 - 320)));
+    }
+    #sectionFiveInfo{
+        font-size: calc(8px + (10 - 8) * ((100vw - 320px) / (425 - 320)));
+    }
+    #sectionFiveButtonHolder{
+        width: 100%;
+    }
+    .sectionFiveButtons{
+        height: auto;
+        padding-top: 1%;
+        width: 50%;
+        font-size: calc(8px + (8 - 8) * ((100vw - 320px) / (425 - 320)));
+    }
+    
+}

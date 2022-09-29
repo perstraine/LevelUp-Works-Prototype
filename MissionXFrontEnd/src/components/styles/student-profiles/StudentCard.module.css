@@ -1,0 +1,72 @@
+@import url("https://use.typekit.net/wjd7ohr.css");
+
+.student_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4em 0;
+}
+
+.student_item {
+  background-color: #ffffff;
+  border-radius: 1em;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
+  width: 70%;
+  padding: 2.3em 0;
+  display: flex;
+  align-items: center;
+  font-family: "open-sans";
+  font-weight: bold;
+  color: #707070;
+  box-shadow: 0px 3px 6px #00000029;
+  animation: fadeAfterLoad 0.35s ease-in-out;
+}
+
+.profileImg {
+  width: 104px;
+  height: 105px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1720px) {
+  .student_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4em 0;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .student_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .student_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .student_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@keyframes fadeAfterLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

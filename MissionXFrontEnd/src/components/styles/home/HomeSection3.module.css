@@ -1,0 +1,47 @@
+#sectionThree{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5vw 0 8vw;
+}
+
+#sectionThreeTitle{
+    font-family: 'nunito';
+    font-weight: 700;
+    font-size: calc(22px + (28 - 22) * ((100vw - 769px) / (2560 - 769)));
+    color: #6C6C6C;
+    padding-bottom: 2vw;
+}
+
+#tileCardHolder{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+#tileCard{
+    width: 22%;
+}
+
+#skillImage{
+    object-fit: cover;
+    width: 100%;
+}
+
+@media screen and (max-width: 769px) {
+    #sectionThreeTitle{
+        text-align: center;
+    }
+    #tileCardHolder{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #tileCard{
+        width: 50%;
+        padding-bottom: 5%;
+    }
+}

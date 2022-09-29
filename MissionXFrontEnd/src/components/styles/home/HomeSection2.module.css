@@ -1,0 +1,130 @@
+#tiles{
+    display: flex;
+}
+
+#tileHolder{
+    cursor: pointer;
+    background-image: radial-gradient(#88DBFF, #42C0F6);
+    border-radius:20px ;
+    width: 19%;
+    position: relative;
+    height: 0;
+    padding-bottom: 19%;
+    border: #42C0F6 solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 5px #00000029;
+    margin-right: 1vw;
+}
+
+#tileImage{
+    mix-blend-mode: overlay;
+    object-fit: cover;
+    width: 50%;
+    padding: 0.8vw;
+}
+
+#tileName{
+    line-height: normal;
+    width: 90%;
+    font-family: 'open-sans';
+    font-size: calc(10px + (15 - 10) * ((100vw - 769px) / (2560 - 769)));
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#sectionTwo{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4vw;
+    display: flex;
+    /* justify-content: center; */
+}
+
+#sectionTwoLeft{
+    width: 50%;
+    padding: 3vw 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionTwoMainTitle{
+    font-family: nunito, sans-serif;
+    font-weight:700;
+    font-size: calc(32px + (40 - 32) * ((100vw - 769px) / (2560 - 769)));
+    color: #6C6C6C;
+    padding-bottom: 3%;
+}
+
+#sectionTwoDesc{
+    width: 75%;
+    font-family: open-sans;
+    font-size: calc(14px + (20 - 14) * ((100vw - 769px) / (2560 - 769)));
+    font-weight: 700;
+    /* line-height: 1.1vw; */
+    letter-spacing: 0.4px;
+    color: #767676;
+    padding-bottom: 9%;
+}
+
+#sectionTwoSubTitle{
+    font-family: nunito, sans-serif;
+    font-weight:700;
+    font-size: calc(24px + (32 - 24) * ((100vw - 769px) / (2560 - 769)));
+    color: #6C6C6C;
+padding-bottom: 2%;
+}
+
+#sectionTwoRight{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projectImage{
+    object-fit: cover;
+    width: 90%;
+}
+
+#buttons{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  /* background-color: #ffffff; */
+  border-radius: 50%;
+  display: inline-block;
+  border: #707070 solid 2px;
+}
+
+@media screen and (max-width: 768px) {
+    #sectionTwo{
+        width: 100%;
+        flex-direction: column;
+    }
+    #sectionTwoLeft, #sectionTwoRight {
+        width: 100%;
+    }
+    #tiles{
+        justify-content: space-evenly;
+    }
+    #tileName{
+        font-size: calc(8px + (10 - 8) * ((100vw - 426px) / (769 - 426)));
+    }
+    #sectionTwoLeft{
+        text-align: center;
+        align-items: center;
+    }
+    #buttons{
+        width: 40%;
+    }
+}

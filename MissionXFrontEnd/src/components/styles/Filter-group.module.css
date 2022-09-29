@@ -1,0 +1,28 @@
+filterTitle {
+    font-size: small;
+    border-bottom-style: solid;
+    border-color: #767676;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+filterSectionEnd {
+    margin-bottom: 20%;
+}
+
+
+.filterList {
+    color: #767676;
+}
+
+@media screen and (max-width: 769px) {
+    filterTitle {
+        font-size: smaller;
+        padding-bottom: 2px;
+        margin-bottom: 2px;
+    }
+
+    .filterList {
+        font-size: smaller;
+    }
+}

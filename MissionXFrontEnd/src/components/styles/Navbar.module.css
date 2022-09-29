@@ -1,0 +1,109 @@
+#headerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #43C0F6;
+}
+
+#headerNormal {
+    font-size: calc(12px + (23 - 12) * ((100vw - 769px) / (2560 - 769)));
+    background-color: #43C0F6;
+    border: #41BAEF solid 1px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'open-sans';
+    font-weight: 700;
+    color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    position: relative;
+    z-index: 10;
+}
+
+#logo {
+    display: flex;
+    width: 30%;
+    height: 60px;
+    justify-content: center;
+}
+
+#headerNav {
+    height: 60px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+#loginLanguage {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+/* The holder is literally just a dive to hold the languages and login section.
+I didn't know what else to call it*/
+#holder{
+    display: flex;
+    flex-direction: column;
+}
+
+#language {
+    font-weight: 400;
+    padding: 5px;
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.flag{
+    padding: 0px 5px;
+}
+
+#login{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    justify-self: flex-end;
+    font-size: calc(12px + (23 - 12) * ((100vw - 769px) / (2560 - 769)));
+}
+
+
+#dropDownButton{
+    font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (769 - 300)));
+}
+
+#headerDropDown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pointing{
+    cursor: pointer;
+}
+
+@media screen and (min-width:769px){
+    #dropDownButton{
+        display: none;
+    }
+    
+    #headerDropDown{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:769px){
+#headerNavLinks{
+    display: none;
+}
+#headerNav {
+    justify-content: center;
+    width: 10%;
+}
+#logo,#loginLanguage {
+    width: 45%;
+}
+}

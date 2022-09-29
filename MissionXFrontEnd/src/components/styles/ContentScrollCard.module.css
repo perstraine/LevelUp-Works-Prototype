@@ -1,0 +1,36 @@
+.contentBackground {
+  background-color: #ffffff80;
+  position: absolute;
+  top: 7.95%;
+  left: 15%;
+  width: 82%;
+  height: 80%;
+  border-radius: 1.5em;
+  box-shadow: #00000029;
+}
+
+.contentContainer {
+  position: absolute;
+  left: 6.5%;
+  top: 9%;
+  right: 8%;
+  height: 78%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 1em 0;
+}
+
+.contentContainer::-webkit-scrollbar {
+  width: 1.5em;
+}
+
+.contentContainer::-webkit-scrollbar-thumb {
+  background: #43c0f6;
+  border-radius: 1em;
+  border: 0.2em solid #ffffffea;
+}
+
+.contentContainer::-webkit-scrollbar-track {
+  background: #ffffffbf;
+  border-radius: 1em;
+}

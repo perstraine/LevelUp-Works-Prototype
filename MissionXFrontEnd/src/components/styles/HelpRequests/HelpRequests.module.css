@@ -1,0 +1,100 @@
+@import url("https://use.typekit.net/wjd7ohr.css");
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: "Nunito";
+  font-weight: 900;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  color: #6c6c6c;
+}
+
+.itemsRight {
+  display: flex;
+  align-items: flex-end;
+  gap: 4em;
+  padding: 2.5em 7em 0 0;
+}
+
+.itemsTitle {
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: #6c6c6c;
+  cursor: pointer;
+}
+
+.requestTotalContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.requestContainer {
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+  width: 87%;
+  margin-left: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  animation: fadeAfterLoad 0.35s ease-in-out;
+}
+
+.studentRequest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.requestContainerLeft {
+  padding-left: 3.5em;
+  display: flex;
+  gap: 3.5em;
+  align-items: center;
+}
+
+.studentName {
+  color: #707070;
+  font-size: 1.6em;
+  font-family: "Nunito";
+  font-weight: 800;
+}
+
+.profileImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.requestContainerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding-right: 1em;
+  color: #707070;
+  align-items: flex-end;
+}
+
+.requestDate {
+  font-size: 0.9em;
+}
+
+.requestTime {
+  font-size: 0.9em;
+}
+
+@keyframes fadeAfterLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

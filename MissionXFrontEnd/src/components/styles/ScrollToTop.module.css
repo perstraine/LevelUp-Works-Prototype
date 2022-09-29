@@ -1,0 +1,39 @@
+.scrollToTopBtn {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: float;
+    font-size: 16px;
+    margin: 4px 2px;
+        
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect*/
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease; 
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media screen and (max-width: 769px) {
+.scrollToTopBtn {
+        padding: 5px 15px;
+        font-size: 12px;
+        margin: 4px 2px;
+    }
+}

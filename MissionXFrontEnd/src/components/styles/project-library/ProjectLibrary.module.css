@@ -1,0 +1,250 @@
+/* Structure */
+
+
+#projectHome {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-family: "open-sans", sans-serif;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: "open-sans", sans-serif;
+
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 11%;
+    text-align: right;
+}
+
+#contentHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 70%;
+    margin-left: 27%;
+    margin-right:0%;
+   text-align: right;
+    margin-bottom: 2%;
+}
+
+#contentProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: right;
+}
+
+
+#pageTitle {
+    margin-left: 26%;
+    margin-right: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    color: #767676;
+}
+
+#pageProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: fit-content;
+    color: #767676;
+}
+
+#filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 15%;
+    margin-left: 12%;
+    color: #767676;
+    min-width: fit-content;
+
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.showProject {
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    font-family: open-sans, sans-serif;
+    color: #767676;
+}
+
+.pic {
+    border-radius: 3ch;
+    border-style: outset;
+    border-color: #C7C5C5;
+    border-width: 1px;
+    resize: both;
+    width: 300px;
+    height: 220px;
+    max-width: 300px;
+    max-height: 220px;
+    align-items: center;
+}
+
+/* Skinning */
+
+@import url('https://use.typekit.net/wjd7ohr.css');
+
+* {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    font-family: 'open-sans';
+}
+
+.title {
+    font-family: 'nunito';
+    font-size: 2.5rem;
+}
+
+
+.intro {
+    font-size: 1.3rem;
+}
+
+.projName {
+    font-family: 'nunito';
+    font-size: 1.5rem;
+    color: #707070;
+    font-weight: bolder;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+
+.projProps {
+    font-family: 'nunito';
+    font-size: 1.5rem;
+    color: #767676;
+    cursor: default;
+}
+
+.hovertext {
+    position: relative;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 1%;
+    bottom: 130%;
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 1281px) {
+    .pic {
+        width: 222px;
+        height: 160px;
+        max-width: 222px;
+        max-height: 160px;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .projProps {
+        font-size: 1rem;
+    }
+
+
+    .showProject {
+        padding: 2%;
+
+    }
+
+    .projName {
+        font-size: 1rem;
+        font-weight: bolder;
+        max-width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .pic {
+        width: 190px;
+        height: 130px;
+        max-width: 190px;
+        max-height: 130px;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-left: 5%;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .projProps {
+        font-size: 1rem;
+    }
+
+    #filter {
+        margin-left: 5%;
+    }
+
+    #pageTitle {
+        margin-left: 10%;
+    }
+
+    #pageProjects {
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+    }
+
+    .projName {
+        font-size: 1rem;
+        font-weight: bolder;
+        max-width: 200px;
+
+    }
+
+}
